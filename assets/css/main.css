@@ -3317,6 +3317,9 @@ table {
 .gray-light-bg {
   background: #f5f5f5 !important;
 }
+.white-light-bg {
+	background: #ffffff !important;
+  }
 
 /* line 14, src/assets/scss/objects/_objects.background.scss */
 .primary-bg {
@@ -4185,7 +4188,7 @@ img.mfp-img {
 
 /* line 8, node_modules/bootstrap/scss/_images.scss */
 .img-fluid {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -12731,12 +12734,6 @@ footer a {
   padding-left: 0;
 }
 
-@media (min-width: 1300px) and (max-width: 1920px) {
-  /* line 2, src/assets/scss/components/hero-section/_common.scss */
-  .img-custom-width {
-    min-width: 600px;
-  }
-}
 
 /* line 7, src/assets/scss/components/hero-section/_common.scss */
 .big-text {
@@ -12971,6 +12968,10 @@ footer a {
   .shape-image {
     display: none;
   }
+}
+
+.hero-animation-img {
+	text-align: center;
 }
 
 /* line 42, src/assets/scss/components/hero-section/_hero-3.scss */
@@ -13428,10 +13429,6 @@ footer a {
   .hero-animated-card-3 {
     display: none;
   }
-  /* line 78, src/assets/scss/components/hero-section/_hero-13.scss */
-  .img-custom-width {
-    min-width: auto;
-  }
   /* line 82, src/assets/scss/components/hero-section/_hero-13.scss */
   .content-img-wrap .dot-shape {
     display: none;
@@ -13527,6 +13524,7 @@ footer a {
   -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
           box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125);
   color: #fff;
+  background-color: transparent;
 }
 
 /* line 13, src/assets/scss/components/promo-section/_promo-2.scss */
@@ -20350,4 +20348,41 @@ a.text-dark:hover, a.text-dark:focus {
 /* line 11, node_modules/bootstrap/scss/utilities/_visibility.scss */
 .invisible {
   visibility: hidden !important;
+}
+
+.pull-right {
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.pull-right {
+		text-align: end;
+	}
+}
+
+.img-wrap {
+	text-align: center;
+}
+
+.img-custom-width {
+	max-width: 300px;
+}
+@media (min-width: 768px) {
+	.img-custom-width {
+		max-width: 400px;
+	}
+}
+@media (min-width: 1200px) {
+	.img-custom-width {
+		max-width: 500px;
+	}
+}
+
+.mockupPhones {
+	width: 100% !important;
+	max-width: 300px !important;
+}
+@media (min-width: 1200px) {
+	.mockupPhones {
+		max-width: 350px !important;
+	}
 }

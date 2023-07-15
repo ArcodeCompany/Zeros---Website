@@ -63,6 +63,21 @@ jQuery(function ($) {
     });
   } // 5. counter up js
 
+   // 10. client-testimonial one item carousel
+
+   $('.frases').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: false,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+	autoplayTimeout: 5000,
+    lazyLoad: true,
+    items: 1
+  });
+
  // 11. monthly and yearly pricing switch
 
   $("#js-contcheckbox").change(function () {
