@@ -354,67 +354,10 @@
 					</div>
 				</div>
 				<div class="row align-items-center justify-content-md-center justify-content-center">
-					<div class="col-lg-4 col-md-6 col-sm-8">
-						<div class="text-center bg-white single-pricing-pack mt-4">
-							<div class="price-img pt-4">
-								<img src="assets/img/paquete1.png" alt="price" width="70" class="img-fluid">
-							</div>
-							<div class="py-4 border-0 pricing-header">
-								<div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$199<span>.00 <small>MXN / Mes</small></span></div>
-
-							</div>
-							<div class="price-name">
-								<h5 class="mb-0">Paquete 20</h5>
-							</div>
-							<div class="pricing-content">
-								<ul class="list-unstyled mb-4 pricing-feature-list">
-									<li><span>20</span> tickets</li>
-									<li class="text-deem">Atención hasta en <span>5</span> días hábiles</li>
-									<li class="text-deem">Hasta <span>4</span> perfiles</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-8">
-						<div class="popular-price bg-white text-center single-pricing-pack mt-4">
-							<div class="ribbon"><i class="fa-solid fa-star fa-lg"></i></div>
-							<div class="price-img pt-4">
-								<img src="assets/img/paquete2.png" alt="price" width="80" class="img-fluid">
-							</div>
-							<div class="py-4 border-0 pricing-header">
-								<div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$349<span>.00 <small>MXN / Mes</small></span></div>
-							</div>
-							<div class="price-name">
-								<h5 class="mb-0">Paquete 40</h5>
-							</div>
-							<div class="pricing-content">
-								<ul class="list-unstyled mb-4 pricing-feature-list">
-									<li><span>40</span> tickets</li>
-									<li class="text-deem">Atención hasta en <span>5</span> días hábiles</li>
-									<li class="text-deem">Hasta <span>4</span> perfiles</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-8">
-						<div class="text-center bg-white single-pricing-pack mt-4">
-							<div class="price-img pt-4">
-								<img src="assets/img/paquete3.png" alt="price" width="80" class="img-fluid">
-							</div>
-							<div class="py-4 border-0 pricing-header">
-								<div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$549<span>.00 <small>MXN / Mes</small></span></div>
-							</div>
-							<div class="price-name">
-								<h5 class="mb-0">Paquete 80</h5>
-							</div>
-							<div class="pricing-content">
-								<ul class="list-unstyled mb-4 pricing-feature-list">
-									<li><span>80</span> tickets</li>
-									<li class="text-deem">Atención hasta en <span>5</span> días hábiles</li>
-									<li class="text-deem">Hasta <span>4</span> perfiles</li>
-								</ul>
-							</div>
-						</div>
+					<div class="col-12">
+						<stripe-pricing-table pricing-table-id="prctbl_1NfT9mHM4or5kv258puNmenP"
+						publishable-key="pk_test_51NBQctHM4or5kv25qqWO7iUzXbMDDPYkEjMj5M4AaRY38jrITPvaoHOg1AOMJM0sWMn8CMUXqJQ9ItPLeyDrC5Nt00FTEbWwgy">
+						</stripe-pricing-table>
 					</div>
 					<div class="col-12">
 						<div class="support-cta text-center mt-5">
@@ -558,7 +501,8 @@
 	<script src="assets/js/vendors/jquery.easing.min.js"></script>
 	<script src="assets/js/vendors/bootstrap.min.js"></script>
 	<script src="assets/js/app.js"></script>
-
+	<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+	
 	<!--endbuild-->
 </body>
 
