@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		const strUserAgent = navigator.userAgent;
+		if(/android/i.test(strUserAgent)) {
+			window.location.href = "https://play.google.com/store/apps/details?id=com.botsy.zeros";
+		} else if(/iPad|iPhone|iPod/.test(strUserAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+			window.location.href = "https://apps.apple.com/app/zeros/id6463450168";
+		} else {
+			window.location.href = "https://zeros.mx/";
+		}
+	</script>
+</html>
